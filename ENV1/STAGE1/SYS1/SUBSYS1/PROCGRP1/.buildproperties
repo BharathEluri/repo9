@@ -1,0 +1,31 @@
+/*
+/* .buildproperties for processor group PROCGRP1
+/*
+C1PRGRP = 'PROCGRP1'
+C1NPRGRP = C1PRGRP
+/*
+/* ------------------------------------- processor names
+/*
+BUILD:BUILD = 'GCB3A'
+MOVE:MOVE = 'NOPROC'
+DEL:DEL  = 'DXLDD'
+/*
+/* ------------------------------------- DEL overrides
+/*
+DEL:CSSB = 'OUI'
+DEL:CSSC = 'OUI'
+/*
+/* ------------------------------------- BUILD overrides
+/*
+BUILD:COBODEV = 'SSR'
+BUILD:COBOGRP = 'DATA(24)'
+BUILD:COSTGRCP = C1STGID||Substr(C1EN,1,1)'ENV.PHOTO.COPYLIB.C'
+BUILD:COSTGRIN = C1STGID||Substr(C1EN,1,1)'ENV.INCLUDE.COPYLIB.C'
+BUILD:DB2@VERS = ''
+BUILD:DB2NAME = 'D01J'
+BUILD:LSTGRLD = C1STGID||Substr(C1EN,1,1)'ENV.PHOTO.BTCHLOAD.C'
+BUILD:LSTGRLD2 = C1STGID||Substr(C1EN,1,1)'ENV.PHOTO.BTCHLOA2.C'
+/*
+/* ------------------------------------- Misc. overrides
+/*
+CLTEST = 'TRUE'

@@ -1,0 +1,3 @@
+      *START COPY3                                                              
+        01 FELD3 PIC X(5) VALUE 'COPY3'.                                        
+      *END COPY3                                                                

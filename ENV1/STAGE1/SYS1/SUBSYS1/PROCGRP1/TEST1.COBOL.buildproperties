@@ -1,0 +1,3 @@
+/* .buildproperties for a specific element
+ELEMPRP1 = 'TEST1_COBOL_PROP1_CONTENT'
+ELEMPRP2 = 'TEST1_COBOL_PROP2_CONTENT'

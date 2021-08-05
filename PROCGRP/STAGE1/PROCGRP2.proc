@@ -1,0 +1,39 @@
+/* .buildproperties for processor group PROCGRP2
+C1PRGRP = 'CE05G1'
+C1NPRGRP = C1PRGRP
+/* ------------------------------------- processor names
+BUILD:BUILD = 'GCB3A'
+MOVE:MOVE = 'NOPROC'
+DEL:DEL  = 'DXLDD'
+/* ------------------------------------- DEL overrides
+DEL:CSSB = 'NO'
+DEL:CSSC = 'NO'
+/* ------------------------------------- BUILD overrides
+BUILD:COBODEV = 'SSR'
+BUILD:COBOGRP = 'DATA(24)'
+BUILD:COSTGRCP = C1STGID||Substr(C1EN,1,1)'ENV.PHOTO.COPYLIB.C'
+BUILD:COSTGRIN = C1STGID||Substr(C1EN,1,1)'ENV.INCLUDE.COPYLIB.C'
+BUILD:DB2@VERS = ''
+BUILD:DB2NAME = 'D01J'
+BUILD:LSTGRLD = C1STGID||Substr(C1EN,1,1)'ENV.PHOTO.BTCHLOAD.C'
+BUILD:LSTGRLD2 = C1STGID||Substr(C1EN,1,1)'ENV.PHOTO.BTCHLOA2.C'
+BUILD:DYN = 'Y'
+BUILD:BTC = 'Y'
+BUILD:DB2 = 'Y'
+BUILD:XDL = 'N'
+BUILD:DLI = 'Y'
+BUILD:LK2 = 'Y'
+BUILD:MTX = 'Y'
+BUILD:COB3DYN = 'Y'
+BUILD:C1FOOTPR = 'PILOT/'||Space(Date(),0)||MTime
+BUILD:ZPGR36 = Substr(C1PRGRP,3,4)
+BUILD:ZSRC58 = Substr(C1ELEMENT,5,4)
+BUILD:PPGRDIS = 'N'
+BUILD:PRTSQL = 'N'
+BUILD:PRTTRN = 'N'
+BUILD:TYP = 'BTCH'
+/*
+/* ------------------------------------- Misc. overrides
+/*
+C1USERID = UserID()
+MTime = Space(Translate(Time()," ",":"),0)

@@ -1,0 +1,3 @@
+/* .buildproperties for subsystem SUBSYS1
+C1SU = 'SUBSYS1'
+C1NSU = C1SU

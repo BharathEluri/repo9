@@ -1,0 +1,6 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID.    MTEST2.
+       ENVIRONMENT    DIVISION.
+       PROCEDURE      DIVISION.
+           DISPLAY 'MTEST2 World'.
+           GOBACK.
